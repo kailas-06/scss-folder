@@ -1,0 +1,125 @@
+.customer-story-wrap {
+    &.what-we-offer{
+        margin: 0 -15px;
+        padding: 0 15px;
+        background-size: 100% 100%;
+    }
+}
+
+.customer-story {
+    position: relative;
+    padding-bottom: 4.77rem;
+    
+    &.container {
+        max-width: 983px;
+    }
+
+    .field-content {
+        width: 100%;
+    }
+
+    &-list{
+        position: relative;
+        justify-content: center;
+        margin-top: -40px;
+        background-color: $white-color;
+        padding-top:4rem;
+        z-index: 1;
+        @include breakpoint(mobile-max){
+            width: 100%;
+            flex-direction: column;
+            margin: 0 auto;
+            padding:0;
+        }
+        > li {
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid $dark-grey-color-3;
+            box-shadow: 0 5px $quaternary-color-1;
+            background-color: $white-color;
+            padding: 1.62rem 1.3rem 1.4rem;
+            margin-top: 4.82%;
+            @include breakpoint(ipad-max){
+                padding: 1rem;
+            }
+            @include breakpoint(mobile-max){
+                width: 100%;
+                align-items: center;
+                margin: 3.3rem 0 0 0 !important;
+            }
+            @include breakpoint(portrait-mobile-max){
+                padding: 1rem;
+            }
+            &:nth-child(2n + 1) {
+                margin-left: 0;
+            }
+            &:first-child,
+            &:nth-child(2) {
+                margin-top: 0;
+            }
+
+            .testimonial-card {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 0 1.4rem 0;
+                @include breakpoint(portrait-mobile-max){
+                    width: 100%;
+                }
+                &-img img{
+                    width: 76px;
+                    height: 76px;
+                    border-radius: 100%;
+                    object-fit: cover;
+                    @include breakpoint(portrait-mobile-max){
+                        align-items: center;
+                        margin: 0 auto;
+                    }
+                }
+                &-desc{
+                    width: calc(100% - 90px);
+                    margin: 0 0 0 1rem;
+                    @include breakpoint(ipad-max) {
+                        width: 100%;
+                        margin: 1rem 0 0 0;
+                    }
+                    @include breakpoint(portrait-mobile-max){
+                        margin: 1rem 0 0 0;
+                    }
+                    li {
+                        width: 48%;
+                        span{
+                            display: block;
+                            margin: 0 0 0.6rem 0;
+                        }
+                    }
+                }
+            }
+        }
+        > li + li {
+            margin-left: 4.82%;
+        }
+        &__desc{
+            position: relative;
+            padding: 4.21rem 0 2rem 0;
+            border-top: 1px solid $primary-color;
+            &:after,
+            &:before {
+                position: absolute;
+                font-family: '#{$icomoon-font-family}' !important;
+                color: $dark-grey-color-4;
+                font-size: 1.28rem;
+            }
+            &:before {
+                content: $icon-quote-left;
+                top: 2.18rem;
+                left: 0;
+            }
+            &:after {
+                content: $icon-quote-right;
+                bottom: 0;
+                right: 5px;
+            }
+        }
+    }
+}

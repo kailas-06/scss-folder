@@ -1,0 +1,46 @@
+.btn {
+    font-weight: 500;
+    line-height: initial;
+    border: none;
+    border-radius: 2.43rem;
+    padding: 0.84rem 1.93rem;
+    @include transition(all, .5s ease);
+    &-primary {
+        color: $white-color;
+        background-color: #F58025;
+        border: 1.5px solid #F58025;
+        &:hover,
+        &:focus {
+            color: #F58025;
+            background-color: $white-color;
+            border: 1.5px solid #F58025;
+        }
+        &:active{
+            color: $white-color!important;
+            background-color: #F58025!important;
+            border: 1.5px solid #F58025!important;
+        }
+    }
+    &-primary-border {
+        color:#F58025;
+        border: 1.5px solid #F58025;
+        &:hover,
+        &:focus {
+            color: $white-color;
+            background-color: #F58025;
+        }
+        &--white-text {
+            color: $white-color;
+        }
+    }
+    &-white-border {
+        color: $white-color;
+        background-color: transparent;
+        border: 1px solid $white-color;
+        &:hover,
+        &:focus {
+            color: $dark-blue-color-72 !important;
+            background-color: $white-color;
+        }
+    }
+}

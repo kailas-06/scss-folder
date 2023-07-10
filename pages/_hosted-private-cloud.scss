@@ -1,0 +1,149 @@
+.hosted-private-cloud,
+.public-cloud-services,
+.partners{
+    font-family: $secondary-font;
+    .hero-banner-style--2 {
+            .hero-banner-desc {
+                @include breakpoint(mobile-max) {
+                    padding-top: 100px;
+                }
+            }
+        }
+    >.our-features .com-title-bottom-border{
+        width: 95%;
+        margin: 0 auto 30px;
+        span{
+            display: block;
+            @include breakpoint(portrait-mobile-max){
+                display:inline;
+            }
+        }
+    }
+    .our-features {
+        .our-features-subtitle{
+            margin: 0 auto 20px auto;
+            &:nth-last-child(1){
+                margin: 0 auto;
+            }
+            @include breakpoint(mobile-max){
+                margin: 0 auto 15px auto;
+            }
+        }
+        &-list{
+            $self : &;
+            &--reverse{
+                .our-features-list-item{
+                    &:nth-last-child(2){
+                        @include breakpoint(mobile-max){
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .bullet-list--style-2.list-style-2,
+        .bullet-list--style-2.list-bullet {
+            .bullet-list-item {
+                align-items: flex-start;
+            }
+        }
+        .bullet-list {
+            &-item {
+                &__icon {
+                    margin: 0;
+    
+                    .icon-check_circle {
+                        color: $primary-color;
+                        font-size: 22px;
+                    }
+                }
+            }
+            
+              
+            
+            &--style-2.list-style-2{
+                
+                &>li{
+                    width:50%;
+                    @include breakpoint(portrait-mobile-max){
+                        width: 100%;
+                    }
+                   
+                    ul{
+                        padding:0;
+                        
+                        @include breakpoint(portrait-mobile-max){
+                            margin: 0 0 30px 0;
+                        }
+                    
+                    }
+                    .bullet-list-item {
+                        padding: 0 55px 0 0;
+                        &__desc{
+                            width:100%;
+                        }
+                        @include breakpoint(mobile-max){
+                            padding:0;
+                        }
+                    }
+                   
+                    &:last-of-type {
+                    .bullet-list-item {
+                            padding: 0 0 0 55px;
+                            @include breakpoint(mobile-max) {
+                                    padding: 0;
+                                }
+                        }
+                        ul {
+                        @include breakpoint(portrait-mobile-max) {
+                            margin: 0;
+                            }
+                        }
+                    }
+                    .bullet-list-item{
+                        width:100%;
+                       
+                    }
+                }
+            }
+            }
+
+        &-list{
+            &-item{
+                &__desc,&__info{
+                    margin: 0 0 20px 0;
+                    &:last-of-type {
+                            margin: 0;
+                    }
+                    @include breakpoint(mobile-max) {
+                        margin: 0 0 15px 0;
+                    }
+                   
+                }
+                &__info{
+                    &:last-of-type {
+                            margin: 0;
+                        }
+                }
+            }
+        }
+    }
+    .promotional-banner-desc__title{
+        width:70%;
+    }
+}
+
+#block-promotionalbannerhostedprivatecloud{
+    .promotional-banner-desc {
+       .btn {
+            padding: 0.94rem 1.93rem 0.94rem 1.93rem;
+        }
+    
+        &__title {
+            width: 65%;
+            @include breakpoint(mobile-max){
+                width: 100%;
+            }
+        }
+    }
+}

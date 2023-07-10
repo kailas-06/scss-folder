@@ -1,0 +1,79 @@
+.connected-bare-metals {
+    .hero-banner-style--2 .hero-banner__title {
+        width: 78%;
+        @include breakpoint(ipad-max){
+            width: 50%;
+            @include font-size(35px);
+        }
+        @include breakpoint(mobile-max){
+            width: 100%;
+            @include font-size(28px);
+        }
+    }
+        .our-features-list-item--img,
+        .our-features-subtitle-item--img{
+        @include breakpoint(mobile-max){
+            width: 100%;
+            height: auto;
+        }
+    }
+    .our-features .com-title-bottom-border {
+        width: 90%;
+        @include breakpoint(mobile-max){
+			width: 100%;
+		}
+    }
+    .our-features{
+
+        &-list{
+            &-item{
+                &:nth-last-child(1),&:nth-last-child(2) {
+                    width:50%;
+                    @include breakpoint(mobile-max) {
+                            width: 100%;
+                        }
+                }
+                &:nth-last-child(1){
+                    @include breakpoint(mobile-max) {
+                    margin: 30px 0 0 0;
+                    }
+                }
+            }
+        @include breakpoint(mobile-max) {
+            flex-direction: column;
+        }
+        }
+        &-list--reverse{
+            
+            .our-features-list-item{
+                &:nth-last-child(1),&:nth-last-child(2) {
+                    width:50%;
+                    @include breakpoint(mobile-max) {
+                            width: 100%;
+                        }
+                }
+                &:nth-last-child(1){
+                    align-items: flex-end;
+                }
+
+            }
+            @include breakpoint(mobile-max){
+                flex-direction: column-reverse;
+            }
+                         &:nth-last-child(1) {
+            
+                             @include breakpoint(mobile-max) {
+                                 margin: 0;
+                             }
+                         }
+        }
+        // .bullet-list{
+        //     &-item{
+        //         margin: 0 0 40px 0;
+        //         @include breakpoint(portrait-mobile-max){
+        //             margin : 0 0 30px 0;
+        //         }
+        //     }
+        // }
+    }
+}

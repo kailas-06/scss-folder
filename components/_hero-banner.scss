@@ -1,0 +1,138 @@
+.hero-banner {
+    $self: &;
+    position: relative;
+    font-family: $secondary-font;
+    &-style--1{
+        img {
+            @include breakpoint(mobile-max) {
+                min-height: 400px;
+                object-fit: cover;
+                object-position: center;
+            }
+            @include breakpoint(custom-small-mobile-max) {
+                min-height: 450px;
+            }
+        }
+        .hero-banner-content{
+            position: absolute;
+            top: 60%;
+            width: 35%;
+            transform: translateY(-60%);
+            @include breakpoint(desktop-max) {
+                width: 43%;
+            }
+            @include breakpoint(ipad-max) {
+                top: 65%;
+                width:75%;
+                transform: translateY(-65%);
+            }
+            @include breakpoint(mobile-max) {
+                top: 75%;
+                width: calc(100% - 30px);
+                transform: translateY(-75%);
+            }
+            @include breakpoint(portrait-mobile-max){
+                width: 90%;
+                transform: translateY(-65%);
+
+            }
+            &__title{
+                color: $white-color;
+                font-size: 18px;
+                font-weight: 700;
+                margin: 0 0 1rem 0;
+                @include breakpoint(ipad-max) {
+                    font-size: 17px;
+                    margin: 0 0 0.9rem 0;
+                }
+                @include breakpoint(mobile-max){
+                    font-size: 16px;
+                    margin: 0 0 1rem 0;
+
+                }
+            }
+            &__sub-title{
+                color: $white-color;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 2.5rem;
+                margin: 0 0 1rem 0;
+                @include breakpoint(ipad-max) {
+                    margin: 0 0 0.9rem 0;
+                }
+                @include breakpoint(portrait-mobile-max) {
+                    font-size: 28px;
+                }
+            }
+            &__para{
+                color: $white-color;
+                font-size: 18px;
+                font-weight: 400;
+                margin: 0 0 1rem 0;
+                @include breakpoint(ipad-max) {
+                    font-size: 13px;
+                    margin: 0 0 0.9rem 0;
+                }
+                @include breakpoint(mobile-max){
+                    font-size: 16px;
+                    margin: 0 0 1rem 0;
+
+                }
+            }
+        }
+    }
+    &-style--2 {
+        img {
+            @include breakpoint(mobile-max) {
+                height: 300px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        #{$self}-desc {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            display: block;
+            margin: 0 auto;
+            transform: translateY(-50%);
+            text-align: center;
+            padding-top: 4rem;
+            @include breakpoint(ipad-max){
+                padding-top: 2.5rem;
+            }
+            @include breakpoint(mobile-max){
+                padding-top: 2rem;
+            }
+            @include breakpoint(custom-small-mobile-max){
+                padding-top: 1rem;
+            }
+        }
+        #{$self}__title {
+            width: 81%;
+            color: $white-color;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 38px;
+            text-transform: uppercase;
+            margin: 0 auto;
+            @include breakpoint(ipad-max){
+                width: 50%;
+                @include font-size(35px);
+            }
+            @include breakpoint(mobile-max){
+                width: 100%;
+                @include font-size(28px);
+            }
+        }
+    }
+    &--spin-text {
+        .spin-text {
+            &:after {
+                content:"";
+                animation: spin 3s linear infinite;
+            }
+        }
+    }
+}

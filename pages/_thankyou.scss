@@ -1,0 +1,23 @@
+.thak-you-content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    @include breakpoint(mobile-max) {
+        padding-bottom: 3rem;
+    }
+    .box-title {
+        color: $dark-gray-color-49;
+        font-size: 1.5rem;
+        line-height: 1.7;
+        position: relative;
+        text-transform: capitalize;
+        margin-bottom: 0;
+        a {
+            @include transition(all, .5s ease);
+            &:hover,
+            &:focus {
+                color: $primary-color;
+                text-decoration: none;
+            }
+        }
+    }
+}

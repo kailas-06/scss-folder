@@ -1,0 +1,173 @@
+.partners{
+    margin:0;
+    .hero-banner{
+        &-desc{
+            text-align: left;
+            top: 30%;
+            transform: none;
+            @include breakpoint(mobile-max){
+                text-align: center;
+                top: 70%;
+            }
+            @include breakpoint(portrait-mobile-max){
+                top: 40%;
+            }
+            @include breakpoint(custom-small-mobile-max){
+                top: 30%;
+            }
+         
+            .btn-primary{
+                padding:13px 45px 12px 45px;
+            }
+        }
+        &__title{
+            margin: 0 0 16px 0;
+            text-transform: none;
+            @include breakpoint(mobile-max){
+                width: 66%;
+                margin: 0 auto 16px auto;
+            }
+            @include breakpoint(custom-small-mobile-max){
+                width: 100%;
+            }
+            span{
+                display: block;
+                @include breakpoint(mobile-max){
+                    display:inline;
+                }
+            }
+        }
+        &-style--2{ 
+            img{
+                @include breakpoint(mobile-max) {
+                    height:auto;
+                }
+            }
+        }
+    }
+        .ww-advantages-list {
+            background-image: none;
+            padding: 0;
+            &-item{
+                background-color: $white-color;
+            }
+        }
+    .why-choose-us{
+        margin:0;
+        .ww-advantages-list{
+            
+           
+            &-item{
+            width:47%;
+                @include breakpoint(mobile-max){
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .our-features{
+        .com-title-bottom-border{
+            @include breakpoint(mobile-max){
+                font-size: 20px;
+            }
+        }
+        .ww-advantages-list {
+            &-item {
+                &:nth-last-child(1) {
+                        margin: 0;
+                }
+            }
+        }
+        .our-features-subtitle{
+            width: 72%;
+            @include breakpoint(mobile-max){
+                width: 100%;
+            }
+        }
+        .our-features-list{
+            &--style-2{
+                .com-title-bottom-border {
+                        &--position--start {
+                            width: 80%;
+                            margin: 0 0 30px 0;
+                            @include breakpoint(portrait-mobile-max){
+                                width: 100%;
+                                margin: 0 auto 30px auto;
+                                text-align: center;
+                            }
+                        }
+                    }
+            }
+        }
+        &-subtitle{
+            &--style-2{
+                font: normal normal normal 24px/30px Roboto;
+                letter-spacing: 0.18px;
+                @include breakpoint(portrait-mobile-max){
+                    font:normal normal normal 18px/24px Roboto;
+                    
+
+                }
+            }
+        }
+        
+    }
+    .our-speciality{
+        .ww-advantages-list{
+            &-item{
+                width: 100%;
+                margin: 0 0 40px 0;
+                @include breakpoint(portrait-mobile-max) {
+                    margin: 0 0 30px 0;
+                }
+                &:nth-last-child(1){
+                    margin: 0;
+                }
+                &:hover{
+                    &::after{
+                        width:200px;
+                        left: 23.5%;
+                        @include breakpoint(portrait-mobile-max){
+                            left: 50%;
+                        }
+                    }
+                }
+                &-img {
+                        margin-bottom: 0;
+                }
+            }
+            &__detail{
+               &-intro {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 0 18px 0;
+                }
+                &-heading{
+                    margin: 0 0 0 18px;
+                    text-align: left;
+                }
+                &-desc{
+                    text-align: left;
+                }
+            }
+        }
+        .our-speciality-info {
+            width: 80%;
+            @include breakpoint(portrait-mobile-max){
+                width: 100%;
+                text-align: center;
+                margin: 0 0 30px 0;
+            }
+        }
+
+    }
+    position: relative;
+    .fixed-sidebar{
+        .fixed-section-active{
+
+            @include breakpoint(medium-large-desktop-min) {
+                width: 500px;
+            }
+        }   
+    }
+}

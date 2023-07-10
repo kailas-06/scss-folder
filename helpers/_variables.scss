@@ -1,0 +1,87 @@
+// font family
+$primary-font: 'montserrat', sans-serif;
+$secondary-font: 'Roboto';
+
+// color
+$primary-color: #F58025;
+$base-color: #08214C;
+
+// basic
+$white-color: #FFFFFF;
+$black-color: #000000;
+$menu-bg-color: #007AE3;
+$quaternary-color-1: #0B2372;
+
+// light gray
+$light-gray-color: #BDBFC9;
+$dark-gray-color-8A: #7A7D8A;
+$dark-gray-color-49: #494949;
+$dark-gray-color-2D: #2D2D2D;
+$dark-gray-color-37: #373737;
+$light-grey-color-1: #C8C8C8 ;
+$dark-gray-color-2: #8E9194;
+$dark-grey-color-3: #707070;
+$dark-grey-color-4: #DBDBDB;
+
+// light blue
+$light-blue-color-BFF: #FAFBFF;
+$light-blue-color-EFF:#ECEEFF;
+
+// dark blue
+$dark-blue-color-72: #0B2372;
+$dark-blue-color-2D: #000A2D;
+$dark-blue-color-45: #001245;
+$dark-blue-color-CD: #0E3BCD;
+
+// font path
+$fonts-path: "../fonts" !default;
+
+// path
+$images-path: "../images" !default;
+
+// icomoon path
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path:  "../fonts" !default;
+
+// icomoon icons
+$icon-manage-infrastructure: "\e900";
+$icon-interconnection: "\e901";
+$icon-ease-migration: "\e902";
+$icon-cloud-database: "\e903";
+$icon-unlock-database: "\e904";
+$icon-manage-clouds: "\e905";
+$icon-sync-hyperconverged-infrastructure: "\e906";
+$icon-customer-support: "\e907";
+$icon-recovery-service: "\e908";
+$icon-public-cloud-service: "\e909";
+$icon-connected-bare-metal: "\e90a";
+$icon-innovation: "\e90b";
+$icon-data-center-soln: "\e90c";
+$icon-cloud-service-provider: "\e90d";
+$icon-expertise: "\e90e";
+$icon-solutions: "\e90f";
+$icon-support: "\e910";
+$icon-facebook: "\e911";
+$icon-twitter: "\e912";
+$icon-linkedin: "\e913";
+$icon-arrow-right: "\e914";
+$icon-check-circle: "\e915";
+$icon-right-arrow: "\e916";
+$icon-down-arrow: "\e920";
+$icon-close: "\e918";
+$icon-quote-left: "\e919";
+$icon-quote-right: "\e91a";
+$icon-menu: "\e91b";
+$icon-call: "\e91c";
+$icon-whatsapp: "\e91d";
+$icon-skype: "\e91e";
+$icon-chat: "\e91f";
+$icon-bottom-angle-arrow: "\e921";
+$icon-check-mark: "\e917";
+
+// Container and Grid Spacing
+$container-width: 1170px;
+$hn-container-md-width: 1114px;
+$container-lg-width: 985px;
+$container-md-width: 830px;
+$grid-space: 15px;

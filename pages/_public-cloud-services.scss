@@ -1,0 +1,30 @@
+.public-cloud-services{
+    .our-features{
+        .our-features-subtitle{
+            width:73%;
+            @include breakpoint(mobile-max){
+                width:100%;
+            }
+        }
+        &-list{
+            &-item--img{
+                height:409px;
+                @include breakpoint(ipad-max){
+                    height:auto;
+                }
+            }
+        }
+    }
+}
+#block-promotionalbannerpublicasaservice {
+    .promotional-banner {
+        &-desc {
+            &__title {
+                width: 47%;
+                @include breakpoint(mobile-max){
+                    width:88%;
+                }
+            }
+        }
+    }
+}

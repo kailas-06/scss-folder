@@ -1,0 +1,85 @@
+.financial-cloud{
+    font-family: $secondary-font;
+    .hero-banner{
+        &__title{
+                color:$black-color;
+                text-align: left;
+                margin: 0;
+                width: 55%;
+                text-transform: none;
+                @include breakpoint(mobile-max) {
+                    text-align: center;
+                    margin: 0 auto;   
+                    width: 100%;
+                }
+        }
+        &-desc{
+            @include breakpoint(mobile-max){
+                top: 75%;
+            }
+        }
+        @include breakpoint(mobile-max){
+        padding: 6rem 0 0 0;
+        }
+    &-style--2 {
+        img{
+            @include breakpoint(mobile-max) {
+                height:auto;
+            }
+        }
+    }
+    }
+    .why-choose-us{
+        margin: 0;
+        .our-features{
+            &-subtitle{
+                margin: 0 auto 40px auto;
+                @include breakpoint(mobile-max){
+                    margin: 0 auto 30px 0;
+                }
+            }
+        }
+        .com-title-bottom-border{
+            @include breakpoint(mobile-max) {
+                font-size:20px;
+            }
+        }
+    }
+    .ww-advantages-list{
+        padding:0;
+        background-image: none;
+        &-item{
+            width: 30%;
+            &:nth-child(-n+3){
+                margin: 0;
+            }
+            margin:40px 0 0 0;
+            @include breakpoint(mobile-max){
+                &:nth-child(n) {
+                        margin: 30px 0 0 0;
+                        width: 100%;
+                }
+            }
+                
+        }
+    }
+       
+}
+
+#block-promotionalbannerfinancialcloud{
+    .promotional-banner{
+        &__img{
+            min-height: 430px;
+        }
+        .com-title-bottom-border,
+        .our-features-subtitle{
+            color:$white-color;
+        }
+        .com-title-bottom-border{
+            margin:0 auto 30px auto;
+        }
+        .our-features-subtitle{
+            margin: 0 auto 20px auto;
+        }
+    }
+}

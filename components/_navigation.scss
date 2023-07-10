@@ -1,0 +1,166 @@
+.navigation {
+    padding: 0.81rem 0;
+    font-family: $secondary-font;
+    @include background-color-rgba($black-color, .36);
+    @include breakpoint(mobile-max) {
+        background-color: $dark-blue-color-2D;
+    }
+    .sf-menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        @include breakpoint(mobile-max) {
+            padding: 1.78rem 0 0 0 !important;
+        }
+        a,
+        span.nolink {
+            color: #FFFFFF;
+            text-transform: capitalize;
+            font-weight: 500;
+            @include transition(all, .5s, ease);
+            padding: 0;
+            cursor: pointer;
+            &:hover,
+            &:focus {
+                color: $primary-color;
+                text-decoration: none;
+            }
+        }
+        .btn {
+            padding: 8px 29px;
+
+        }
+    }
+    .sf-main {
+        > li + li {
+            @include breakpoint(ipad-min) {
+                margin-left: 55px;
+            }
+            @include breakpoint(mobile-max) {
+                margin-top: 1.78rem;
+            }
+        }
+        .sf-with-ul.menuparent {
+            position: relative;
+            padding: 0 20px 0 0;
+            &::after{
+                position: absolute;
+                content: $icon-arrow-right;
+                top: 2px;
+                right: 0;
+                font-family: '#{$icomoon-font-family}' !important;
+                @include font-size(12px);
+                transform: rotate(90deg);
+                @include breakpoint(mobile-max){
+                    right: initial;
+                    margin-left: 10px;
+                }
+            }
+            .sf-sub-indicator{
+                display: none;
+            }
+        }
+        .menuparent{
+            >ul{
+                background-color: $dark-blue-color-2D;
+                .sf-depth-2{
+                    padding: 0.36rem;
+                    @include breakpoint(mobile-max){
+                        padding: 0;
+                        margin-top: 1rem;
+                    }
+                }                
+                .sf-clone-parent{
+                    display: none;
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    #CollapsingNavbar {
+        display: block;
+    }
+    #superfish-main-toggle {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        width: 30px;
+        height: 25px;
+        transform: translateY(-50%);
+        @include breakpoint(mobile-max) {
+            top: 8px;
+            transform: initial;
+        }
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            width: 30px;
+            height: 3px;
+            background-color: $white-color;
+        }
+        &:before {
+            top: 0;
+        }
+        &:after {
+            bottom: 0;
+        }
+        &.sf-expanded:before{
+            transform: rotate(135deg);
+            top: 11px;
+        }
+        &.sf-expanded:after{
+            transform: rotate(-135deg);
+            top: 11px;
+        }
+        &.sf-expanded span{
+            display: none;
+        }
+        span {
+            position: absolute;
+            top: 11px;
+            width: 30px;
+            height: 3px;
+            font-size: 0;
+            background-color: $white-color;
+            
+        }
+    }
+    .btn {
+        display: inline-block;
+        padding: 8px 30px;
+    }
+}
+
+.region-header-quick-links {
+    @include breakpoint(mobile-max) {
+        position: absolute;
+        top: 6px;
+        right: 60px;
+        // transform: translateY(-50%);
+    }
+}
+
+.navbar-brand {
+    width: 100px;
+    color: $primary-color;
+    font-size: 1.62rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    &:hover,
+    &:focus {
+        color: $primary-color;
+    }
+}
+
+body.scrolled {
+    .navigation {
+        background-color: $dark-blue-color-2D;
+    }
+}

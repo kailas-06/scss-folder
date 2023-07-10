@@ -1,0 +1,137 @@
+.modal.fade.show {
+    opacity: 1;
+}
+.whitepaper {
+    @include common-top-bottom-space();
+    .row {
+        margin: 0;
+        .views-row + .views-row {
+            @include border-top-rgba(1px, solid, $base-color, 0.2);
+            padding-top: 4rem;
+            margin-top: 4rem;
+            @include breakpoint(ipad-max) {
+                padding-top: 2rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+    &-modal {
+        .contact-form-wrap {
+            padding: 15px 30px;
+            @include breakpoint(mobile-max) {
+                padding: 15px 30px;
+            }
+            .contact-form {
+                @include breakpoint(ipad-min) {
+                  width: 100%;
+                  border: none;
+                  padding: 0;
+                }
+                @include breakpoint(mobile-max) {
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                .js-form-type-email,
+                .js-form-item-phone-number {
+                    @include breakpoint(mobile-min) {
+                        width: 100%;
+                    }
+                }
+                .captcha {
+                    .g-recaptcha > div {
+                        @include breakpoint(mobile-max) {
+                            width: 100% !important;
+                        }
+                        > div > iframe {
+                            @include breakpoint(mobile-max) {
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                    .rc-anchor-normal .rc-anchor-content {
+                        @include breakpoint(mobile-max) {
+                            width: 145px !important;
+                        }
+                    }
+                    .js-form-item-captcha-response {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        .form-control {
+                            width: 150px;
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .modal-header {
+            border-bottom: 1px solid $base-color;
+            @include breakpoint(custom-small-mobile-max) {
+                justify-content: flex-start;
+            }
+            .modal-title {
+                color: $base-color;
+                font-weight: 600;
+            }
+            .close {
+                top: 12px;
+                right: 12px;
+                width: auto;
+                height: auto;
+                color: $white-color;
+                font-size: 10px;
+                text-shadow: none;
+                background-color: $primary-color;
+                padding: 8px !important;
+                margin: 0;
+                opacity: 1;
+                span {
+                    display: none;
+                }
+                &:after {
+                    content: $icon-close;
+                    font-family: '#{$icomoon-font-family}' !important;
+                }
+            }
+        }
+    }
+    &-lists {
+        display: flex;
+        flex-flow: column wrap;
+        >li {
+            &:before {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 1.67rem;
+                line-height: 1.5;
+                font-weight: 600;
+                color: $base-color;
+                text-transform: capitalize;
+                @include breakpoint(mobile-max) {
+                    font-size: 1rem;
+                }
+                &:hover,
+                &:focus {
+                    color: $primary-color;
+                }
+                [class^="icon-"],
+                [class*=" icon-"] {
+                    font-size: 2rem;
+                    padding-left: 0.71rem;
+                }
+            }
+        }
+        >li + li {
+            padding-top: 1rem;
+            margin-top: 1rem;
+            @include border-top-rgba(1px, solid, $base-color, 0.2);
+        }
+    }
+}

@@ -1,0 +1,42 @@
+button:focus,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.lists-unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lists-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// custom scrollbar
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $light-gray-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  // @include background-color-rgba($dark-blue-color-45, .1);
+  background-color: $dark-blue-color-2D;
+  border-radius: 10px;
+  @include transition(all, .5s, ease);
+  &:hover {
+    background: $dark-blue-color-45; 
+  }
+}
+
+.bg-light-gray{
+  background-color: #F4F4F4;
+}
